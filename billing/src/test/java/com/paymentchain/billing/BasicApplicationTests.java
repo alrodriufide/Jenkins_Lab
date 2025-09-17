@@ -5,12 +5,13 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.junit.jupiter.MockitoExtension;
 
-@ExtendWith(MockitoExtension.class)
+@RunWith(SpringRunner.class)
+@SpringBootTest
 public class BasicApplicationTests  {
 
     @Test
-    void contextLoads() {
-       String message = "Default Message Cambio 11";
-        assertNotNull(message);
+    public void contextLoads() {
+       String message = "Default Message cambio test devops";
+        Assert.assertNotNull(message);
     }
 }
